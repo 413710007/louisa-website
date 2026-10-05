@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="路易莎咖啡網站作業示範：品牌介紹、熱門飲品、咖啡生活小知識、圖片、影片與外部連結。">
+  <title>LOUISA COFFEE｜咖啡生活</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="回到首頁">
+        <span class="brand-mark">L</span>
+        <span>
+          <strong>LOUISA</strong>
+          <small>COFFEE LIFE</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="開啟選單">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#about">品牌介紹</a>
+        <a href="#menu">熱門飲品</a>
+        <a href="#gallery">咖啡日常</a>
+        <a href="#coffee-tips">咖啡小知識</a>
+        <a href="#video">影片</a>
+        <a href="#contact">聯絡資訊</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">A CUP FOR EVERY DAY</p>
+        <h1>一杯咖啡，<br><span>連結每一天的生活。</span></h1>
+        <p class="hero-text">
+          以咖啡、茶飲與輕食為主題，認識路易莎咖啡的品牌特色，
+          也從市場、成本、競爭、政府與技術五個面向觀察咖啡產業。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">開始探索</a>
+          <a class="btn btn-light" href="https://www.louisacoffee.co/" target="_blank" rel="noopener">官方網站 ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="section-tag">01 / ABOUT</p>
+          <h2>關於路易莎</h2>
+          <p>
+            路易莎是一個台灣常見的連鎖咖啡品牌，提供咖啡、茶飲、輕食與糕點等品項。
+            這個網站以「咖啡生活」為主題，整理品牌、產品與產業觀察，作為網頁設計課程的練習作品。
+          </p>
+          <p>
+            除了飲品本身，咖啡店也可以是讀書、工作、朋友聊天與短暫休息的生活空間。
+          </p>
+          <a class="text-link" href="https://www.louisacoffee.co/" target="_blank" rel="noopener">前往路易莎官方網站 →</a>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">☕</div>
+          <h3>咖啡生活</h3>
+          <p>從一杯熟悉的飲料開始，觀察品牌如何融入現代人的日常。</p>
+          <div class="mini-stats">
+            <div><strong>01</strong><span>咖啡</span></div>
+            <div><strong>02</strong><span>茶飲</span></div>
+            <div><strong>03</strong><span>輕食</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-bg" id="menu">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="section-tag">02 / MENU</p>
+          <h2>熱門飲品與輕食</h2>
+          <p>實際供應品項請以官方資訊為準。</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="drink-card">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="咖啡與咖啡豆">
+            <div class="card-body">
+              <span class="pill">CLASSIC</span>
+              <h3>經典咖啡</h3>
+              <p>熟悉的咖啡香氣，適合通勤、讀書或工作時享用。</p>
+              <button class="detail-btn" data-message="經典咖啡：以簡單、日常的咖啡體驗為主題。">查看介紹</button>
+            </div>
+          </article>
+
+          <article class="drink-card">
+            <img src="https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&w=900&q=85" alt="拿鐵咖啡">
+            <div class="card-body">
+              <span class="pill">MILK COFFEE</span>
+              <h3>拿鐵咖啡</h3>
+              <p>咖啡與奶泡的柔和組合，是許多人喜歡的咖啡選擇。</p>
+              <button class="detail-btn" data-message="拿鐵咖啡：咖啡與牛奶風味平衡，適合喜歡柔和口感的人。">查看介紹</button>
+            </div>
+          </article>
+
+          <article class="drink-card">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85" alt="茶飲">
+            <div class="card-body">
+              <span class="pill">TEA</span>
+              <h3>茶與其他飲品</h3>
+              <p>不喝咖啡時，也可以從茶飲與其他飲品找到適合自己的選擇。</p>
+              <button class="detail-btn" data-message="茶飲：提供不同於咖啡的風味與飲用情境。">查看介紹</button>
+            </div>
+          </article>
+
+          <article class="drink-card">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85" alt="麵包與糕點">
+            <div class="card-body">
+              <span class="pill">FOOD</span>
+              <h3>輕食與糕點</h3>
+              <p>咖啡搭配麵包、甜點等輕食，形成更完整的下午茶體驗。</p>
+              <button class="detail-btn" data-message="輕食與糕點：讓咖啡店不只是喝咖啡，也能成為休息與用餐的空間。">查看介紹</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">03 / GALLERY</p>
+          <h2>咖啡日常</h2>
+          <p></p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item big">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85" alt="咖啡店內部">
+            <figcaption>舒服的咖啡空間</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=85" alt="咖啡店座位">
+            <figcaption>閱讀與工作</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?auto=format&fit=crop&w=800&q=85" alt="咖啡拉花">
+            <figcaption>一杯咖啡的時間</figcaption>
+          </figure>
+          <figure class="gallery-item wide">
+            <img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=1200&q=85" alt="咖啡與筆電">
+            <figcaption>咖啡 × 數位生活</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="coffee-tips">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="section-tag light">04 / COFFEE TIPS</p>
+          <h2>咖啡生活小知識</h2>
+          <p>除了認識品牌，也可以從咖啡風味、飲用情境與日常習慣，找到屬於自己的咖啡時間。</p>
+        </div>
+
+        <div class="tips-grid">
+          <article class="tip-card">
+            <span>01</span>
+            <h3>咖啡香氣</h3>
+            <p>咖啡的香氣會受到咖啡豆、烘焙程度與沖煮方式影響，每一杯都可能有不同的風味表現。</p>
+          </article>
+
+          <article class="tip-card">
+            <span>02</span>
+            <h3>黑咖啡與拿鐵</h3>
+            <p>喜歡咖啡原本風味的人，可以選擇黑咖啡；偏好柔和口感的人，則可以試試牛奶類咖啡。</p>
+          </article>
+
+          <article class="tip-card">
+            <span>03</span>
+            <h3>適合讀書的咖啡時間</h3>
+            <p>一杯咖啡、一台筆電或一本書，就能把咖啡店變成適合學習、工作與整理思緒的空間。</p>
+          </article>
+
+          <article class="tip-card">
+            <span>04</span>
+            <h3>咖啡搭配輕食</h3>
+            <p>咖啡搭配麵包、三明治或甜點，可以讓簡單的休息時間變成完整的下午茶體驗。</p>
+          </article>
+
+          <article class="tip-card">
+            <span>05</span>
+            <h3>找到自己的喜好</h3>
+            <p>從甜度、濃度、奶味到冰熱程度，每個人的喜好都不一樣，慢慢嘗試就能找到最適合自己的選擇。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="section-tag">05 / VIDEO</p>
+          <h2>看看咖啡產業</h2>
+          <p></p>
+        </div>
+
+        <div class="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/runqy7VhWKA"
+            title="台灣咖啡與路易莎介紹影片"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-actions">
+          <a class="btn btn-primary" href="https://www.youtube.com/@louisa5583" target="_blank" rel="noopener">前往路易莎官方 YouTube ↗</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/watch?v=runqy7VhWKA" target="_blank" rel="noopener">在 YouTube 開啟影片</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="section-tag">06 / CONTACT</p>
+          <h2>想了解更多？</h2>
+          <p>可以直接從官方網站、門市查詢與 YouTube 頻道取得更多資訊。</p>
+        </div>
+
+        <div class="contact-buttons">
+          <a class="btn btn-primary" href="https://www.louisacoffee.co/" target="_blank" rel="noopener">官方網站</a>
+          <a class="btn btn-outline" href="https://www.louisacoffee.co/visit" target="_blank" rel="noopener">門市查詢</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/@louisa5583" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>LOUISA COFFEE</strong>
+        <p>網頁設計課程作業｜咖啡生活主題網站</p>
+      </div>
+      <div class="footer-right">
+        <a href="#home">回到頂端 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
